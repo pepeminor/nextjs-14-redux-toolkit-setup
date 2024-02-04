@@ -1,0 +1,11 @@
+{
+  "theme_color": "#000",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "XAqua",
+  "short_name": "XAqua",
+  "description": "XAqua",
+  "icons": []
+}

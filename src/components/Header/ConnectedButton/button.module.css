@@ -1,0 +1,70 @@
+.childWalletView {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 40px;
+  transition: all 0.5s ease;
+}
+
+.walletViewNoneHover {
+  position: relative;
+  cursor: pointer;
+}
+
+.walletView {
+  position: relative;
+  cursor: pointer;
+}
+.walletView:hover .childWalletView {
+  display: block;
+}
+.wrapInsideChild {
+  padding-top: 44px;
+  z-index: 9;
+}
+.insideChild {
+  z-index: 9;
+  /* background-color: transparent; */
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  position: absolute;
+  left: -240px;
+  top: 0;
+  /* top: 24px; */
+  /* margin-top: 20px; */
+  text-align: left;
+  border: 1px solid gray;
+}
+
+.item {
+  display: flex;
+  padding: 4px 0;
+  /* margin-bottom: 8px; */
+  color: whitesmoke;
+  font-size: 14px;
+}
+.itemSignout {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 7px;
+  padding-top: 10px;
+}
+
+.flexItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item:hover {
+  color: rgba(24, 144, 255, 1);
+}
+
+/* Extra small devices (phones, 380px and down) */
+@media only screen and (max-width: 380px) {
+  .childWalletView {
+    right: -64px;
+  }
+}
